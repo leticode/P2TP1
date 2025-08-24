@@ -84,7 +84,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Ajustes para pantallas menores a 600px */
 @media (max-width: 600px) {
 
   .bloqueInicio {
