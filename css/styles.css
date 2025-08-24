@@ -1,0 +1,122 @@
+:root {
+  --colorFondo: #FAFAFA;
+  --colorTexto: #2A2A2A;
+  --coloraCard: #dddcdc;
+  --colorTitulos: #374151;
+  --colorAcentuado: #A8B2B9;
+  --fuenteLetra:"Inter", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuenteLetra);
+  background-color: var(--colorFondo);
+  color: var(--colorTexto);
+  min-height: 100vh;
+}
+
+.bloqueInicio {
+  max-width: 800px;
+  min-height: 80vh;
+  background-color: var(--colorCard);
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; 
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tituloPrincipal {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--colorTitulos);
+}
+
+.nav {
+  background: var(--colorFondo);
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow:  0 2px 10px rgba(0,0,0,.04);
+}
+
+.buscador {
+  width: 100%;
+  padding: .7rem .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--colorAcentuado);
+  border-radius: 10px;
+  background-color: var(--colorFondo);
+  color: var(--colorTexto);
+  cursor: pointer;
+}
+
+.buscador:focus {
+  outline: none;
+  border-color: var(--colorTitulos);
+  box-shadow: 0 0 5px rgba(55, 65, 81, 0.3);
+}
+
+.producto {
+  padding: .7rem 1rem;
+  border-bottom: 1px solid var(--colorAcentuado);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  list-style: none;
+}
+
+.producto:hover {
+  background-color: var(--colorAcentuado);
+  color: var(--colorCard);
+  border-radius: 6px;
+  transform: translateY(-2px);
+}
+
+/* Ajustes para pantallas menores a 600px */
+@media (max-width: 600px) {
+
+  .bloqueInicio {
+    min-height: 70vh; 
+    padding: 0.8rem;
+    gap: 1rem;
+    margin: 2rems;
+  }
+
+  .tituloPrincipal {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    padding: 0.8rem 1rem;
+    max-height: none;  
+    max-width: 400px;
+  }
+
+  .buscador {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .producto {
+    padding: 1rem 0.8rem;
+    margin: .5rem;
+    font-size: 0.95rem;
+    background-color: var(--colorAcentuado);
+    border-radius: 6px;
+  }
+}
+
+
+
