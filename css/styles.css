@@ -59,6 +59,81 @@ a{
   flex-direction: column;
 }
 
+.bloqueHeaderNav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--coloraCard);
+  padding: 1rem;
+}
+
+.bloqueHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  margin: 2rem;
+}
+
+.alignCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtro {
+  height: 100vh;
+  background-color: var(--coloraCard);
+  max-height: 600px;
+  border-radius: 10px;
+  padding:1rem 2rem;
+  position: sticky;
+}
+
+.filtro h3 {
+  text-align: center;
+  padding: 1rem auto;
+}
+
+.filtroBotones {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filtroBotones button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--colorAcentuado);
+  background-color: white;
+  color: var(--colorTitulos);
+  font-family: var(--fuenteLetra);
+  cursor: pointer;
+}
+
+.filtroBotones button:hover {
+  background-color: var(--colorAcentuado);
+  color: white;
+}
+
+.filtroBotones button.activo {
+  background-color: var(--colorTitulos);
+  color: white;
+  border-color: var(--colorTitulos);
+}
+
+.productosCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
 .buscador {
   width: 100%;
   padding: .7rem .5rem;
@@ -88,6 +163,69 @@ a{
   color: var(--colorCard);
   border-radius: 6px;
   transform: translateY(-2px);
+}
+
+.navBloque a {
+  text-decoration: none;
+  color: var(--colorTitulos);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+.navBloque a:hover {
+  color: var(--colorAcentuado);
+}
+
+.productosCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--coloraCard);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  color: var(--colorTitulos);
+  margin: 1rem 0 0.5rem 0;
+}
+
+.card p {
+  color: var(--colorAcentuado);
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--colorTitulos);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--colorAcentuado);
 }
 
 @media (max-width: 600px) {
