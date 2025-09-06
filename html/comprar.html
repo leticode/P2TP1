@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Formulario de compra</title>
+  </head>
+  <body>
+    <header class="headerCrema header">
+      <div class="bloqueHeaderNav">
+        <img
+          style="max-width: 170px; max-height: 170px"
+          src="/img/logo1.png"
+          alt="logo"
+        />
+        <input
+          type="text"
+          requiredclass="buscador"
+          placeholder="Buscar producto..."
+        />
+        <nav class="navBloque">
+          <a href="./index.html">Inicio</a>
+          <a href="">Limpiador facial</a>
+          <a href="">Protector solar</a>
+          <a href="">Serum</a>
+        </nav>
+      </div>
+    </header>
+    <h1>Finalice su compra:</h1>
+
+    <div class="FinalizarCompra">
+      <div>
+        <div>
+          <h1>Datos personales</h1>
+          <form id="checkoutForm">
+            <fieldset>
+              <legend>Datos personales</legend>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" required />
+
+              <label for="apellido">Apellido</label>
+              <input id="apellido" name="apellido" type="text" required />
+
+              <label for="dni">DNI</label>
+              <input id="dni" name="dni" type="text" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" />
+
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" />
+            </fieldset>
+            <fieldset>
+              <legend>Dirección de envío</legend>
+              <label for="calle">Calle</label>
+              <input
+                id="calle"
+                name="calle"
+                type="text"
+                autocomplete="address-line1"
+                required
+              />
+
+              <label for="numero">Número</label>
+              <input id="numero" name="numero" type="text" required />
+
+              <label for="cp">Código Postal</label>
+              <input id="cp" name="cp" type="text" required />
+
+              <label for="provincia">Provincia</label>
+              <select id="provincia" name="provincia" required>
+                <option value="">Seleccioná…</option>
+                <option>Santa Fe</option>
+                <option>Buenos Aires</option>
+                <option>Córdoba</option>
+              </select>
+
+              <label for="ciudad">Ciudad</label>
+              <input id="ciudad" name="ciudad" type="text" required />
+
+              <label>
+                <input type="checkbox" name="facturacion_igual_envio" checked />
+                Usar la misma dirección para facturación
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Método de envío</legend>
+              <label
+                ><input type="radio" name="envio" value="retiro" required />
+                Retiro en local (gratis)</label
+              >
+              <label
+                ><input type="radio" name="envio" value="domicilio" /> Envío a
+                domicilio</label
+              >
+            </fieldset>
+            <fieldset>
+              <legend>Método de pago</legend>
+              <label
+                ><input type="radio" name="pago" value="mp" required />
+                MercadoPago</label
+              >
+              <label
+                ><input type="radio" name="pago" value="transferencia" />
+                Transferencia</label
+              >
+              <label
+                ><input type="radio" name="pago" value="tarjeta" /> Tarjeta de
+                crédito</label
+              >
+            </fieldset>
+            <label for="notas">Notas del pedido</label>
+            <textarea
+              id="notas"
+              name="notas"
+              rows="3"
+              placeholder="Aclaraciones para el envío…"
+            ></textarea>
+            <input
+              type="submit"
+              onclick="return enviarFormulario()"
+              value="enviar"
+            />
+          </form>
+          <div id="error"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/js/validacion.js"></script>
+</html>
