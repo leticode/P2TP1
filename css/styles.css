@@ -30,7 +30,6 @@ a{
   .buscador {
     width: 100%;
     padding: .7rem .5rem;
-    margin-bottom: 1rem;
     border: 1px solid var(--colorAcentuado);
     border-radius: 10px;
     background-color: var(--colorFondo);
@@ -43,6 +42,65 @@ a{
     border-color: var(--colorTitulos);
     box-shadow: 0 0 5px rgba(55, 65, 81, 0.3);
   }
+
+  .footer {
+  background-color: var(--colorCard);
+  color: var(--colorTexto);
+  font-family: var(--fuenteLetra);
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo h2 {
+  color: var(--colorTitulos);
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav h3,
+.footer-contacto h3 {
+  color: var(--colorTitulos);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav ul li a {
+  color: var(--colorTexto);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--colorAcentuado);
+}
+
+.footer-contacto p {
+  margin: 0.3rem 0;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid var(--colorAcentuado);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
   
   /*CSS INICIO*/
 

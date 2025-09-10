@@ -1,3 +1,5 @@
+
+
 let productos = document.getElementById("productos");
 
 let productosCard = [{
@@ -417,11 +419,7 @@ let productosCard = [{
     precio:"$ 91.438",
     piel: "mixta",
     categoria:"serum"
-},
-
-
-
-
+}
 ]
 function mostrarProductos(categoria){
 
