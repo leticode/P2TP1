@@ -1,9 +1,9 @@
 :root {
   --colorFondo: #FAFAFA;
   --colorTexto: #2A2A2A;
-  --colorCard: #e8e8e8;
-  --colorTitulos: #374151;
-  --colorAcentuado: #A8B2B9;
+  --colorCard: #e9e9e9;
+  --colorTitulos: #26344b;
+  --colorAcentuado: #909fa9;
   --fuenteLetra:"Inter", Arial, sans-serif;
 }
 
@@ -204,7 +204,8 @@ a{
 .filtro {
   height: 100vh;
   background-color: var(--colorCard);
-  max-height: 600px;
+  max-height: 300px;
+  width: 400px;
   border-radius: 10px;
   padding:1rem 0.5rem;
   position: sticky;
@@ -218,12 +219,12 @@ a{
 .filtroBotones {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .filtroBotones button {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 1px solid var(--colorAcentuado);
   background-color: white;
   color: var(--colorTitulos);
