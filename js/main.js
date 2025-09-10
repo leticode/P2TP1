@@ -103,42 +103,6 @@ let productosCard = [{
     precio:"$89.736",
     piel: "mixta",
     categoria:"crema"
-}
-,
-{
-    nombre:"Crema de dia Eucerin Hyaluron-Filler",
-    descripcion:"Está indicada para pieles normales a mixtas con pérdida de volumen y definición. Reafirma, redefine contornos, hidrata, reduce arrugas y protege contra el fotoenvejecimiento con FPS 15",
-    img: "../img/crema13.webp",
-    precio:"$104.373",
-    piel: "mixta",
-    categoria:"crema"
-}
-,
-{
-    nombre:"Crema facial hidratante Garnier vitamina C",
-    descripcion:"Hidrata, protege y unifica el tono de la piel en 7 días. Formulada con vitamina Cg, niacinamida y vitamina E.Aprobado por Crueltry Free International.Comprometido con Green Beauty",
-    img: "../img/crema14.webp",
-    precio:"$10.714",
-    piel: "mixta",
-    categoria:"crema"
-}
-,
-{
-    nombre:"Crema dia L'Oréal París Revitalift Pro Retinol",
-    descripcion:"La Crema Día Revitalift con Pro-Retinol reduce visiblemente las arrugas en 8 semanas, estimula la producción de colágeno, mejora la elasticidad y luminosidad, hidrata y protege la piel gracias a su FPS",
-    img: "../img/crema15.webp",
-    precio:"$26.713",
-    piel: "mixta",
-    categoria:"crema"
-}
-,
-{
-    nombre:"Crema facial Get The Look Prebióticos Día",
-    descripcion:"fortalece la barrera cutánea, hidrata y nutre gracias a sus aceites ricos en omegas, vitamina E y niacinamida. Ayuda a reducir líneas de expresión, protege contra el envejecimiento prematuro y calma afecciones como rosácea, acné o dermatitis. Apta para todo tipo de piel",
-    img: "../img/crema16.webp",
-    precio:"$10.000",
-    piel: "mixta",
-    categoria:"crema"
 },
 {
     nombre:"Gel Exfoliante Eucerin Anti-Pigment",
@@ -238,38 +202,226 @@ let productosCard = [{
     piel: "mixta",
     categoria:"limpiador"
 },
+
 {
-    nombre:"Cetaphil Limpiador Facial Diario",
-    descripcion:"Limpia profundamente y minimiza poros sin resecar la piel. Con niacinamida, pantenol y glicerina para hidratar y fortalecer la piel. Dermatológicamente probado, eficaz incluso en piel sensible, eliminando suciedad, exceso de grasa y maquillaje sin tirantez",
-    img: "../img/limpiadorFacial13.webp",
-    precio:"$28.872",
+    nombre:"Protector Solar Facial Eucerin Sensitive Protect Fps 50+",
+    descripcion:"El Protector Solar Facial Eucerin Sensitive Protect FPS 50+ ofrece protección diaria para piel sensible y seca. Su fórmula con Licochalcona A y Ácido Glicirretínico ayuda a neutralizar radicales libres y favorece la reparación de la piel. Tiene textura ligera, está clínicamente probado y es altamente tolerable",
+    img: "../img/protectorSolar1.webp",
+    precio:"$31.362",
     piel: "mixta",
-    categoria:"limpiador"
+    categoria:"protector"
 },
+
 {
-    nombre:"Perpiel Emulsión de Limpieza",
-    descripcion:"Perpiel emulsión de limpieza con ácido hialurónico 7d. Desmaquilla, limpia, hidrata y suaviza. Para todo tipo de piel, ideal para piel normal a seca",
-    img: "../img/limpiadorFacial14.webp",
-    precio:"$14.002",
+    nombre:"Protector Solar La Roche Posay Anthelios Ultra Protección Leche Hidratante Cuerpo Spf50+",
+    descripcion:"Anthelios Leche Hidratante Carton Tube FPS 50+ de La Roche Posay, es un protector solar de muy alta protección UVA, con un envase sustentable más respetuoso con el medio ambiente. Hecho de cartón 100% reciclado, con -45% uso de plástico",
+    img: "../img/protectorSolar2.webp",
+    precio:"$52.554",
     piel: "mixta",
-    categoria:"limpiador"
+    categoria:"protector"
 },
+
 {
-    nombre:"Caviahue Leche de Limpieza Facial",
-    descripcion:"limpia suavemente el rostro, eliminando impurezas y maquillaje sin resecar la piel. Deja la piel fresca, suave y confortable, ideal para todo tipo de piel",
-    img: "../img/limpiadorFacial15.webp",
-    precio:"$15.001",
+    nombre:"Protector Solar Facial Pigment Control Eucerin FPS 50+",
+    descripcion:"El Protector Solar Facial Eucerin Pigment Control FPS 50+ previene el fotoenvejecimiento prematuro y reduce las manchas oscuras gracias a su combinación de Licochalcona A y Thiamidol, que actúan sobre la hiperpigmentación y evitan su reaparición. Con Advanced Spectral Technology, protege contra rayos UVA, UVB y luz HEVIS. Su textura ligera se absorbe rápido, deja acabado mate y es apto para todo tipo de pieles",
+    img: "../img/protectorSolar3.webp",
+    precio:"$ 38.125",
     piel: "mixta",
-    categoria:"limpiador"
+    categoria:"protector"
 },
+
 {
-    nombre:"Leche y Tónico Micelar 2 en 1 Nivea Rose Care",
-    descripcion:"Retira suavemente el maquillaje a prueba de agua sin frotar ni enjuagar, limpia, purifica y tonifica la piel sin resecarla. Contiene Agua de Rosas Orgánica que hidrata por 24 horas, dejando la piel suave y humectada. NIVEA, líder mundial en cuidado de la piel con más de 100 años de trayectoria, desarrolla constantemente innovaciones para todas las necesidades de la piel",
-    img: "../img/limpiadorFacial16.webp",
-    precio:"$7.155",
+    nombre:"Protector solar Vichy Idéal Soleil Hidratante FPS 50",
+    descripcion:"Leche Hidratante protectora FPS 50+ Idéal Soleil es una leche con alto factor de protección solar, muy resistente al agua. Previene la adhesión de arena y tiene Ácido Hialurónico para hidratar la piel por 24 horas. Acabado seco. Lucha contra los efectos nocivos de los rayos UV, combatiendo los rayos UVB y UVB, apto para pieles sensibles",
+    img: "../img/protectorSolar4.webp",
+    precio:"$41.676",
     piel: "mixta",
-    categoria:"limpiador"
+    categoria:"protector"
 },
+
+{
+    nombre:"Protector Solar en Crema Eucerin Oil Control Sun Gel Toque Seco Fps 50",
+    descripcion:"El Eucerin Oil Control Sun Gel-Creme Toque Seco FPS 50 ofrece protección avanzada contra rayos UVA/UVB y ayuda a prevenir el fotoenvejecimiento. Su fórmula con Licochalcona A, Ácido Glicirretínico y Carnitina controla el exceso de grasa, brindando un acabado mate seco por hasta 8 horas. Es muy resistente al agua, sudor y arena, se absorbe rápido y no deja residuos. Apto para piel sensible, grasa y con tendencia al acné",
+    img: "../img/protectorSolar5.webp",
+    precio:"$33.020",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Fotoprotector Isdin Transparent Wet Skin Fps 50+",
+    descripcion:"Fotoprotector específicamente desarrollado para aplicarse tanto sobre piel mojada como seca. Permite la absorción en piel mojada sin dejar residuo blanco, manteniendo el factor de protección",
+    img: "../img/protectorSolar6.webp",
+    precio:"$68.324",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Protector Solar Vichy Idéal Soleil Hidratante FPS 30",
+    descripcion:"Leche Hidratante FPS 30 Capital Soleil de Vichy para pieles sensibles en formato familiar de 300ml",
+    img: "../img/protectorSolar7.webp",
+    precio:"$43.621",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Protector Solar Corporal Eucerin Toque Seco Fps 30",
+    descripcion:"El Protector Solar Corporal en Spray Eucerin Toque Seco FPS 30 está diseñado para piel sensible y con tendencia al acné. Su fórmula ligera y 100% transparente se absorbe rápido, refresca y protege contra rayos UVA/UVB gracias a la Licochalcona A, un potente antioxidante. Viene en envase de aerosol de aluminio reciclado, que permite una aplicación homogénea, rápida y desde cualquier ángulo",
+    img: "../img/protectorSolar8.webp",
+    precio:"$33.774",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Fotoultra Isdin Active Unify Color Fps 50",
+    descripcion:"Ayuda a regular la producción de melanina gracias al DP3-Unify Complex, que actúa sobre las principales fases de la melanogénesis",
+    img: "../img/protectorSolar9.webp",
+    precio:"$50.884",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Protector Solar La Roche Posay Anthelios Invisible en Spray FPS 50+",
+    descripcion:"Anthelios Spray invisible de Cuerpo fps 50+ de La Roche-Posay. Muy alta protección. Ultra resistente. No deja manchas blancas",
+    img: "../img/protectorSolar10.webp",
+    precio:"$54.150",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Protector Solar Cetaphil Sun Ultra Matte Oil Control FPS 50+",
+    descripcion:"Mujeres y hombres con piel mixta a grasa que busca una alta protección y reducción del brillo",
+    img: "../img/protectorSolar11.webp",
+    precio:"$29.802",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Fluido Isdin Fotoprotector Mineral FPS 50+",
+    descripcion:"El fluido Isdin Fotoprotector Mineral FPS 50+, brinda fotoprotección invisible para la piel sensible, atópica o intolerante a filtros químicos",
+    img: "../img/protectorSolar12.webp",
+    precio:"$40.204",
+    piel: "mixta",
+    categoria:"protector"
+},
+
+{
+    nombre:"Sérum Anti Manchas Glycolic Bright L'Oréal París",
+    descripcion:"Ayuda a prevenir y reducir en un 77% las manchas por el sol, edad, imperfecciones e incluso las manchas persistentes. Sus activos trabajan sobre la corrección de 4 aspectos: la intensidad, la opacidad, el tamaño y la cantidad de manchas. Ideal para todos los tipos y tonos de piel",
+    img: "../img/serum1.webp",
+    precio:"$39.000",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Facial Iluminador Vitamina C Garnier",
+    descripcion:"Apto para todo tipo de piel y testeado con dermatólogos. Resultados visibles: piel con menos manchas, hidratada y radiante. Textura ligera, sin sensación grasosa. Aprobado por Cruelty Free International; pack creado con un 20% de vidrio reciclado. Sin parabenos ni aceites minerales",
+    img: "../img/serum2.webp",
+    precio:"$18.002",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Facial Acf by Dadatina Niacinamida Vol.1: Balance",
+    descripcion:"Este serum otorga balance y humectación a la piel, reduciendo la inflamación y/o enrojecimiento de la misma. Ayuda a controlar el acné, brindando luminosidad",
+    img: "../img/serum3.webp",
+    precio:"$18.869",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Facial Dermaglós Vitamina C",
+    descripcion:"Formulado para aportar luminosidad a la piel con efecto antioxidante. De textura liviana y rápida absorción, reduce signos de fatiga y estimula la producción de colágeno, aumentando la firmeza de la piel dejándola suave y saludable",
+    img: "../img/serum4.webp",
+    precio:"$ 22.550",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Skin Garnier Anti-imperfecciones con Ácido Salicílico",
+    descripcion:"Nuevo Sérum Anti Imperfecciones para piel con tendencia al acné o para pieles mixtas con tendencia oleosa. Apto para pieles sensibles. Tratamiento concentrado formulado con Ácido Salicílico, Vitamina C°, AHA, y Niacinamida para tratar imperfecciones y manchas. Reduce -44% imperfecciones* y -41% visibilidad de manchas**. Textura ligera, sin sensación grasosa",
+    img: "../img/serum5.webp",
+    precio:"$30.900",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Facial L'Oréal Paris Retinol Revitalift Noche",
+    descripcion:" Este activo antiedad por excelencia, posee la capacidad de, en solo dos semanas, reducir las arrugas más profundas, mejorar la textura de la piel, unificar el tono, y devolverle la elasticidad y luminosidad a la piel",
+    img: "../img/serum6.webp",
+    precio:"$45.622",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Cher Dieciocho Ultraglow",
+    descripcion:"¡Experimenta una transformación asombrosa en tu piel con nuestro Sérum Ultra Glow! Esta fórmula innovadora combina ingredientes avanzados para revitalizar y rejuvenecer tu piel de manera excepcional",
+    img: "../img/serum7.webp",
+    precio:"$17.994",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Serum antiarrugas Bagovit Facial Pro Lifting",
+    descripcion:"El Serum Antiarrugas Bagóvit Facial Pro Lifting posee una exclusiva fórmula siliconada de eficacia comprobada clínica y dermatológicamente. Gracias a su Ácido Hialurónico potenciado y extracto de acmella, rellena las arrugas dejando la piel más firme, tensa e hidratada",
+    img: "../img/serum8.webp",
+    precio:"$33.525",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Serum La Roche-Posay Pure Vitamin C",
+    descripcion:"El sérum Pure Vitamin C 10 de la Roche Posay es un antioxidante co-creado con dermatológos para una piel radiante",
+    img: "../img/serum9.webp",
+    precio:"$85.555",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Serum Isdin de Noche Isdinceutics Retinal Intense",
+    descripcion:"Lucí una piel visiblemente más joven con Retinal Intense, el sérum bifásico de noche con retinaldehído que ayuda a acelerar la renovación cutánea. Tras 1 mes de uso, reduce las arrugas y líneas de expresión en un 43%para una piel más lisa y uniforme y con un aspecto rejuvenecido",
+    img: "../img/serum10.webp",
+    precio:"$102.696",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Facial Get The Look Retinol + Ácido Hialurónico",
+    descripcion:"El Sérum Facial Get The Look Retinol + Ácido Hialurónico es el aliado perfecto para una piel radiante y saludable. Su fórmula avanzada combina el poder del retinol y el ácido hialurónico, ofreciendo una hidratación intensiva que transforma la textura de la piel",
+    img: "../img/serum11.webp",
+    precio:"$ 9.894",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+{
+    nombre:"Sérum Antiedad La Roche Posay Retinol B3",
+    descripcion:"Serum Antiedad Retinol B3 es un tratamiento antiedad que trata arrugas profundas y tono irregular apto para pieles sensibles. Compuesto por una molécula de 2 tipos de Retinol: uno puro y otro de liberación gradual, además tiene activos compensatorios que son la vitamina B3 y la glicerina. Asegura eficacia y tolerancia",
+    img: "../img/serum12.webp",
+    precio:"$ 91.438",
+    piel: "mixta",
+    categoria:"serum"
+},
+
+
+
+
 ]
 function mostrarProductos(categoria){
 
@@ -292,6 +444,7 @@ function mostrarProductos(categoria){
     }
 
 }
+
 
 
 

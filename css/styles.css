@@ -236,6 +236,7 @@ button:hover {
   background-color: var(--colorAcentuado);
 }
 
+
 @media (max-width: 600px) {
 
   .bloqueInicio {
