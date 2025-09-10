@@ -430,11 +430,15 @@ function mostrarProductos(categoria){
             let card = document.createElement("div");
             card.classList.add("card");
             card.innerHTML = `
-            <img src="${prodCard.img}" alt="${prodCard.nombre}">
-            <h2>${prodCard.nombre}</h2>
-            <p>${prodCard.descripcion}</p>
-            <h4>${prodCard.precio}</h4>
-            <button>Comprar</button>
+            <div>
+                <img src="${prodCard.img}" alt="${prodCard.nombre}">
+                <h2>${prodCard.nombre}</h2>
+                <p>${prodCard.descripcion}</p>
+            </div>
+            <div class = "precioYComprar">
+                <h4>${prodCard.precio}</h4>
+                <button>Comprar</button>
+            </div>
             `;
             productos.appendChild(card);
         }
