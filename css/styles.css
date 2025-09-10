@@ -1,7 +1,7 @@
 :root {
-  --colorFondo: #FAFAFA;
+  --colorFondo: #efefef;
   --colorTexto: #2A2A2A;
-  --colorCard: #e9e9e9;
+  --colorCard: #ffff;
   --colorTitulos: #26344b;
   --colorAcentuado: #909fa9;
   --fuenteLetra: "Inter", Arial, sans-serif;
@@ -124,6 +124,7 @@ a {
   border-radius: 5px;
   background-color: white;
   color: var(--colorTitulos);
+  background-color: var(--colorFondo);
   font-family: var(--fuenteLetra);
   cursor: pointer;
 }
@@ -273,7 +274,7 @@ button:hover {
 
 .alignIndex{
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -296,7 +297,7 @@ button:hover {
 }
 
 .nav {
-  background: var(--colorFondo);
+  background: var(--colorCard);
   width: 100%;
   max-width: 600px;
   max-height: 300px;

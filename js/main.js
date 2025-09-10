@@ -1,5 +1,5 @@
-
-
+let header = document.getElementsByClassName("header");
+let bloqueHeader = document.getElementsByClassName("bloqueHeader")
 let productos = document.getElementById("productos");
 
 let productosCard = [{
