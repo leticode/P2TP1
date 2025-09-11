@@ -3,214 +3,214 @@ let bloqueHeader = document.getElementsByClassName("bloqueHeader")
 let productos = document.getElementById("productos");
 
 let productosCard = [{
-    nombre:"Crema facial filorga age-purify",
-    descripcion:"Tratamiento que corrige arrugas e imperfecciones mientras hidrata y suaviza la piel. Especialmente indicado para pieles mixtas o grasas con tendencia a imperfecciones y exceso de brillo.",
-    img:"../img/crema1.webp",
-    precio:"$129.720",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema facial filorga age-purify",
+  descripcion: "Tratamiento que corrige arrugas e imperfecciones mientras hidrata y suaviza la piel. Especialmente indicado para pieles mixtas o grasas con tendencia a imperfecciones y exceso de brillo.",
+  img: "../img/crema1.webp",
+  precio: "$129.720",
+  piel: "mixta",
+  categoria: "crema"
 },
 {
-    nombre:"Crema de dia antimanchas",
-    descripcion:"Crema diaria que ayuda a reducir manchas y unificar el tono de la piel. Deja el rostro más radiante, uniforme y saludable desde los primeros días de uso.",
-    img:"../img/crema2.webp",
-    precio:"$17.500",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema de dia antimanchas",
+  descripcion: "Crema diaria que ayuda a reducir manchas y unificar el tono de la piel. Deja el rostro más radiante, uniforme y saludable desde los primeros días de uso.",
+  img: "../img/crema2.webp",
+  precio: "$17.500",
+  piel: "mixta",
+  categoria: "crema"
 },
 {
-    nombre:"Crema suavidad y humectación profunda",
-    descripcion:"Hidrata en profundidad y nutre de manera efectiva, absorbiéndose rápidamente. Proporciona suavidad, frescura y un aspecto visiblemente saludable a todo tipo de piel seca o sensible.",
-    img:"../img/crema3.webp",
-    precio:"$6.442",
-    piel:"seca",
-    categoria:"crema"
+  nombre: "Crema suavidad y humectación profunda",
+  descripcion: "Hidrata en profundidad y nutre de manera efectiva, absorbiéndose rápidamente. Proporciona suavidad, frescura y un aspecto visiblemente saludable a todo tipo de piel seca o sensible.",
+  img: "../img/crema3.webp",
+  precio: "$6.442",
+  piel: "seca",
+  categoria: "crema"
 },
 {
-    nombre:"Crema hidratante seborregulador",
-    descripcion:"Hidratante matificante que reduce el tamaño de los poros y controla el exceso de grasa. Ideal para pieles mixtas a grasas con brillo recurrente y tendencia oleosa.",
-    img:"../img/crema4.webp",
-    precio:"$73.338",
-    piel:"grasa",
-    categoria:"crema"
+  nombre: "Crema hidratante seborregulador",
+  descripcion: "Hidratante matificante que reduce el tamaño de los poros y controla el exceso de grasa. Ideal para pieles mixtas a grasas con brillo recurrente y tendencia oleosa.",
+  img: "../img/crema4.webp",
+  precio: "$73.338",
+  piel: "grasa",
+  categoria: "crema"
 },
 {
-    nombre:"Crema facial hidratante de noche",
-    descripcion:"Proporciona hidratación intensa durante 24 horas, favorece la regeneración nocturna y deja la piel fresca y suave. Apta para todo tipo de pieles, incluso sensibles.",
-    img:"../img/crema5.webp",
-    precio:"$10.000",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema facial hidratante de noche",
+  descripcion: "Proporciona hidratación intensa durante 24 horas, favorece la regeneración nocturna y deja la piel fresca y suave. Apta para todo tipo de pieles, incluso sensibles.",
+  img: "../img/crema5.webp",
+  precio: "$10.000",
+  piel: "mixta",
+  categoria: "crema"
 },
 {
-    nombre:"Crema facial hidratante de dia",
-    descripcion:"Hidratante diaria que aporta beneficios equilibrados para la piel, manteniéndola suave, fresca y protegida. Su fórmula ligera ayuda a conservar la hidratación durante horas.",
-    img:"../img/crema6.webp",
-    precio:"$6.882",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema facial hidratante de dia",
+  descripcion: "Hidratante diaria que aporta beneficios equilibrados para la piel, manteniéndola suave, fresca y protegida. Su fórmula ligera ayuda a conservar la hidratación durante horas.",
+  img: "../img/crema6.webp",
+  precio: "$6.882",
+  piel: "mixta",
+  categoria: "crema"
 },
 {
-    nombre:"Crema L'Oreal París hidra total",
-    descripcion:"Reduce el exceso de grasa y mantiene la piel matificada durante todo el día. Aporta suavidad, uniformidad y frescura, ideal para pieles mixtas y grasas con brillo.",
-    img:"../img/crema7.webp",
-    precio:"$15.800",
-    piel:"grasa",
-    categoria:"crema"
+  nombre: "Crema L'Oreal París hidra total",
+  descripcion: "Reduce el exceso de grasa y mantiene la piel matificada durante todo el día. Aporta suavidad, uniformidad y frescura, ideal para pieles mixtas y grasas con brillo.",
+  img: "../img/crema7.webp",
+  precio: "$15.800",
+  piel: "grasa",
+  categoria: "crema"
 },
 {
-    nombre:"Crema Dermaglos manos y uñas",
-    descripcion:"Crema que forma una película protectora en la piel, previniendo la deshidratación. Protege manos y uñas del resecamiento, brindando suavidad y una hidratación duradera al tacto.",
-    img:"../img/crema8.webp",
-    precio:"$9.039",
-    piel:"seca",
-    categoria:"crema"
+  nombre: "Crema Dermaglos manos y uñas",
+  descripcion: "Crema que forma una película protectora en la piel, previniendo la deshidratación. Protege manos y uñas del resecamiento, brindando suavidad y una hidratación duradera al tacto.",
+  img: "../img/crema8.webp",
+  precio: "$9.039",
+  piel: "seca",
+  categoria: "crema"
 },
 {
-    nombre:"Crema antiarrugas reafirmante",
-    descripcion:"Formulada con ácido hialurónico y vitaminas A y C, hidrata y reafirma. Protege contra los rayos solares UVA/UVB, ayudando a reducir visiblemente las arrugas y líneas de expresión.",
-    img:"../img/crema9.webp",
-    precio:"$37.413",
-    piel:"seca",
-    categoria:"crema"
+  nombre: "Crema antiarrugas reafirmante",
+  descripcion: "Formulada con ácido hialurónico y vitaminas A y C, hidrata y reafirma. Protege contra los rayos solares UVA/UVB, ayudando a reducir visiblemente las arrugas y líneas de expresión.",
+  img: "../img/crema9.webp",
+  precio: "$37.413",
+  piel: "seca",
+  categoria: "crema"
 },
 {
-    nombre:"Crema corporal Hinds Rosa Plus",
-    descripcion:"Fórmula con doble vitamina A que hidrata intensamente y mantiene la piel saludable. De textura ligera, fácil aplicación y sin sensación grasosa, ideal para uso diario en todo el cuerpo.",
-    img:"../img/crema10.webp",
-    precio:"$6.774",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema corporal Hinds Rosa Plus",
+  descripcion: "Fórmula con doble vitamina A que hidrata intensamente y mantiene la piel saludable. De textura ligera, fácil aplicación y sin sensación grasosa, ideal para uso diario en todo el cuerpo.",
+  img: "../img/crema10.webp",
+  precio: "$6.774",
+  piel: "mixta",
+  categoria: "crema"
 },
 {
-    nombre:"Crema facial Pond's Clarant B3 Piel Grasa",
-    descripcion:"Humectante hipoalergénico que combate manchas oscuras y unifica el tono de la piel en dos semanas. Ideal para pieles normales a grasas, no tapa los poros ni irrita.",
-    img:"../img/crema11.webp",
-    precio:"$10.000",
-    piel:"grasa",
-    categoria:"crema"
+  nombre: "Crema facial Pond's Clarant B3 Piel Grasa",
+  descripcion: "Humectante hipoalergénico que combate manchas oscuras y unifica el tono de la piel en dos semanas. Ideal para pieles normales a grasas, no tapa los poros ni irrita.",
+  img: "../img/crema11.webp",
+  precio: "$10.000",
+  piel: "grasa",
+  categoria: "crema"
 },
 {
-    nombre:"Crema hidratante facial La Roche-Posay",
-    descripcion:"Hydraphase Ligera de La Roche-Posay es un hidratante intensivo con ácido hialurónico fragmentado. Refresca, hidrata profundamente y mantiene la piel suave y luminosa por más tiempo.",
-    img:"../img/crema12.webp",
-    precio:"$89.736",
-    piel:"mixta",
-    categoria:"crema"
+  nombre: "Crema hidratante facial La Roche-Posay",
+  descripcion: "Hydraphase Ligera de La Roche-Posay es un hidratante intensivo con ácido hialurónico fragmentado. Refresca, hidrata profundamente y mantiene la piel suave y luminosa por más tiempo.",
+  img: "../img/crema12.webp",
+  precio: "$89.736",
+  piel: "mixta",
+  categoria: "crema"
 },
 // ----------------- limpiadores -----------------
 {
-    nombre:"Gel Exfoliante Eucerin Anti-Pigment",
-    descripcion:"Gel limpiador que exfolia suavemente, mejora la uniformidad de la piel y aporta hidratación. Deja el rostro más luminoso, suave y radiante. Apto para todo tipo de pieles.",
-    img:"../img/limpiadorFacial1.webp",
-    precio:"$37.740",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Gel Exfoliante Eucerin Anti-Pigment",
+  descripcion: "Gel limpiador que exfolia suavemente, mejora la uniformidad de la piel y aporta hidratación. Deja el rostro más luminoso, suave y radiante. Apto para todo tipo de pieles.",
+  img: "../img/limpiadorFacial1.webp",
+  precio: "$37.740",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Cerave Gel Limpiador Espumoso",
-    descripcion:"Fórmula con 3 ceramidas y ácido hialurónico que elimina grasa, suciedad y maquillaje sin irritar. Refrescante, sin perfume, apto para pieles sensibles, mixtas o grasas con tendencia al brillo.",
-    img:"../img/limpiadorFacial2.webp",
-    precio:"$28.874",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Cerave Gel Limpiador Espumoso",
+  descripcion: "Fórmula con 3 ceramidas y ácido hialurónico que elimina grasa, suciedad y maquillaje sin irritar. Refrescante, sin perfume, apto para pieles sensibles, mixtas o grasas con tendencia al brillo.",
+  img: "../img/limpiadorFacial2.webp",
+  precio: "$28.874",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Dermaglos Gel de Limpieza Purificante",
-    descripcion:"Gel que limpia profundamente las impurezas y controla la grasitud. Ideal para pieles oleosas o con tendencia acneica, deja sensación de frescura y piel visiblemente purificada tras cada uso.",
-    img:"../img/limpiadorFacial3.webp",
-    precio:"$9.529",
-    piel:"grasa",
-    categoria:"limpiador"
+  nombre: "Dermaglos Gel de Limpieza Purificante",
+  descripcion: "Gel que limpia profundamente las impurezas y controla la grasitud. Ideal para pieles oleosas o con tendencia acneica, deja sensación de frescura y piel visiblemente purificada tras cada uso.",
+  img: "../img/limpiadorFacial3.webp",
+  precio: "$9.529",
+  piel: "grasa",
+  categoria: "limpiador"
 },
 {
-    nombre:"La Roche Posay Effaclar Gel Mousse",
-    descripcion:"Gel de higiene facial para pieles mixtas a grasas. Formulado con agua termal, zinc seborregulador y tensioactivos suaves, limpia eficazmente sin resecar. No contiene parabenos ni alcohol.",
-    img:"../img/limpiadorFacial4.webp",
-    precio:"$37.608",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "La Roche Posay Effaclar Gel Mousse",
+  descripcion: "Gel de higiene facial para pieles mixtas a grasas. Formulado con agua termal, zinc seborregulador y tensioactivos suaves, limpia eficazmente sin resecar. No contiene parabenos ni alcohol.",
+  img: "../img/limpiadorFacial4.webp",
+  precio: "$37.608",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Isdinceutics Essential Cleansing",
-    descripcion:"Aceite limpiador de textura ligera que se transforma en emulsión al contacto con agua. Limpia en profundidad, elimina impurezas y deja la piel hidratada, suave y fresca al instante.",
-    img:"../img/limpiadorFacial5.webp",
-    precio:"$65.357",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Isdinceutics Essential Cleansing",
+  descripcion: "Aceite limpiador de textura ligera que se transforma en emulsión al contacto con agua. Limpia en profundidad, elimina impurezas y deja la piel hidratada, suave y fresca al instante.",
+  img: "../img/limpiadorFacial5.webp",
+  precio: "$65.357",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Vichy Pureté Thermale Gel Fresco",
-    descripcion:"Gel limpiador suave con moringa y agua termal de Vichy. Elimina impurezas, protege contra la contaminación y calma la piel, dejándola fresca, suave e hidratada en cada aplicación.",
-    img:"../img/limpiadorFacial6.webp",
-    precio:"$52.268",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Vichy Pureté Thermale Gel Fresco",
+  descripcion: "Gel limpiador suave con moringa y agua termal de Vichy. Elimina impurezas, protege contra la contaminación y calma la piel, dejándola fresca, suave e hidratada en cada aplicación.",
+  img: "../img/limpiadorFacial6.webp",
+  precio: "$52.268",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Gel Limpiador Avène Cicalfate",
-    descripcion:"Limpieza suave ideal para pieles sensibles y delicadas. Puede usarse en adultos y niños. Refresca, calma e hidrata, cuidando incluso zonas íntimas o áreas irritadas de la piel.",
-    img:"../img/limpiadorFacial7.webp",
-    precio:"$27.450",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Gel Limpiador Avène Cicalfate",
+  descripcion: "Limpieza suave ideal para pieles sensibles y delicadas. Puede usarse en adultos y niños. Refresca, calma e hidrata, cuidando incluso zonas íntimas o áreas irritadas de la piel.",
+  img: "../img/limpiadorFacial7.webp",
+  precio: "$27.450",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Cerave Air Foam Cleanser",
-    descripcion:"Espuma facial que elimina impurezas, controla sebo y mantiene la hidratación. Contiene ácido hialurónico, niacinamida y ceramidas, dejando la piel limpia, equilibrada y con aspecto fresco y saludable.",
-    img:"../img/limpiadorFacial8.webp",
-    precio:"$28.872",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Cerave Air Foam Cleanser",
+  descripcion: "Espuma facial que elimina impurezas, controla sebo y mantiene la hidratación. Contiene ácido hialurónico, niacinamida y ceramidas, dejando la piel limpia, equilibrada y con aspecto fresco y saludable.",
+  img: "../img/limpiadorFacial8.webp",
+  precio: "$28.872",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Eucerin Dermopure Oil Control",
-    descripcion:"Gel limpiador de triple acción: combate manchas, imperfecciones y exceso de brillo. Con ácidos glicólico y salicílico, limpia en profundidad y ayuda a mantener la piel libre de impurezas.",
-    img:"../img/limpiadorFacial9.webp",
-    precio:"$81.075",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Eucerin Dermopure Oil Control",
+  descripcion: "Gel limpiador de triple acción: combate manchas, imperfecciones y exceso de brillo. Con ácidos glicólico y salicílico, limpia en profundidad y ayuda a mantener la piel libre de impurezas.",
+  img: "../img/limpiadorFacial9.webp",
+  precio: "$81.075",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Caviahue Espuma de Limpieza",
-    descripcion:"Espuma limpiadora con agua termal volcánica y aloe vera. Limpia profundamente, elimina maquillaje y exceso de grasa, calma y suaviza la piel, dejándola fresca y lista para hidratarse.",
-    img:"../img/limpiadorFacial10.webp",
-    precio:"$15.051",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Caviahue Espuma de Limpieza",
+  descripcion: "Espuma limpiadora con agua termal volcánica y aloe vera. Limpia profundamente, elimina maquillaje y exceso de grasa, calma y suaviza la piel, dejándola fresca y lista para hidratarse.",
+  img: "../img/limpiadorFacial10.webp",
+  precio: "$15.051",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Dermaglos Leche de Limpieza Activa",
-    descripcion:"Leche limpiadora que elimina maquillaje e impurezas sin dejar grasitud. Permite que la piel respire y luzca saludable. Textura suave, fresca y apta para uso diario en todo tipo de piel.",
-    img:"../img/limpiadorFacial11.webp",
-    precio:"$9.526",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Dermaglos Leche de Limpieza Activa",
+  descripcion: "Leche limpiadora que elimina maquillaje e impurezas sin dejar grasitud. Permite que la piel respire y luzca saludable. Textura suave, fresca y apta para uso diario en todo tipo de piel.",
+  img: "../img/limpiadorFacial11.webp",
+  precio: "$9.526",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 {
-    nombre:"Cetaphil Limpiador Corporal Pro Ad",
-    descripcion:"Limpiador suave que hidrata y alivia sequedad o picazón en pieles sensibles o atópicas. Ayuda a fortalecer la barrera cutánea y mantiene la humedad natural de la piel de forma prolongada.",
-    img:"../img/limpiadorFacial12.webp",
-    precio:"$17.844",
-    piel:"mixta",
-    categoria:"limpiador"
+  nombre: "Cetaphil Limpiador Corporal Pro Ad",
+  descripcion: "Limpiador suave que hidrata y alivia sequedad o picazón en pieles sensibles o atópicas. Ayuda a fortalecer la barrera cutánea y mantiene la humedad natural de la piel de forma prolongada.",
+  img: "../img/limpiadorFacial12.webp",
+  precio: "$17.844",
+  piel: "mixta",
+  categoria: "limpiador"
 },
 // ----------------- protectores solares -----------------
 {
-    nombre:"Protector Solar Eucerin Sensitive FPS 50+",
-    descripcion:"Protector solar para piel sensible y seca, con antioxidantes Licochalcona A y ácido glicirretínico. Neutraliza radicales libres, protege contra rayos UVA/UVB y favorece la reparación celular diaria.",
-    img:"../img/protectorSolar1.webp",
-    precio:"$31.362",
-    piel:"mixta",
-    categoria:"protector"
+  nombre: "Protector Solar Eucerin Sensitive FPS 50+",
+  descripcion: "Protector solar para piel sensible y seca, con antioxidantes Licochalcona A y ácido glicirretínico. Neutraliza radicales libres, protege contra rayos UVA/UVB y favorece la reparación celular diaria.",
+  img: "../img/protectorSolar1.webp",
+  precio: "$31.362",
+  piel: "mixta",
+  categoria: "protector"
 },
 {
-    nombre:"Protector Solar La Roche Posay Leche SPF 50+",
-    descripcion:"Protector solar corporal de alta protección UVA/UVB en envase sustentable hecho con cartón reciclado. Textura ligera, hidratante y resistente al agua, ideal para pieles sensibles y exposición prolongada.",
-    img:"../img/protectorSolar2.webp",
-    precio:"$52.554",
-    piel:"mixta",
-    categoria:"protector"
+  nombre: "Protector Solar La Roche Posay Leche SPF 50+",
+  descripcion: "Protector solar corporal de alta protección UVA/UVB en envase sustentable hecho con cartón reciclado. Textura ligera, hidratante y resistente al agua, ideal para pieles sensibles y exposición prolongada.",
+  img: "../img/protectorSolar2.webp",
+  precio: "$52.554",
+  piel: "mixta",
+  categoria: "protector"
 },
 // Protectores solares (continuación)
 {
@@ -408,10 +408,13 @@ function mostrarProductos(categoria) {
   document.getElementById("tituloPagina").textContent=titulo;
 
 
+  productos.innerHTML = "";
+  for (let prodCard of productosCard) {
+    if (prodCard.categoria == categoria) {
 
-            let card = document.createElement("div");
-            card.classList.add("card");
-            card.innerHTML = `
+      let card = document.createElement("div");
+      card.classList.add("card");
+      card.innerHTML = `
             <div>
                 <img src="${prodCard.img}" alt="${prodCard.nombre}">
                 <h2>${prodCard.nombre}</h2>
@@ -422,10 +425,10 @@ function mostrarProductos(categoria) {
                 <button>Comprar</button>
             </div>
             `;
-            productos.appendChild(card);
-        }
-    
+      productos.appendChild(card);
     }
+
+  }
 
 }
 
