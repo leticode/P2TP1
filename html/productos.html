@@ -76,10 +76,13 @@
     </footer>
 
     <script src="../js/main.js"></script>
-    <script>
+    <script> 
+        // 1. leo lo que está a partir del "?" en el URL de la pagina. Esto es "window.location.search"
+        // 2. uso  URLSearchParams para transformar ese texto que está despues del "?" en distintos parametros. Porque en este caso solo tenemos "categoria" pero podria haber mas
+        // 3. a la variable "categoria" le asigno el valor del parametro "categoria". Esto es el let categoria = params.get("categoria"); 
         let params = new URLSearchParams(window.location.search);
         let categoria = params.get("categoria");
-        mostrarProductos(categoria);
+        mostrarProductos(categoria, "todas");
     </script>
 </body>
 

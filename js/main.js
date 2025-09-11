@@ -112,7 +112,7 @@ let productosCard = [{
   descripcion: "Fórmula con 3 ceramidas y ácido hialurónico que elimina grasa, suciedad y maquillaje sin irritar. Refrescante, sin perfume, apto para pieles sensibles, mixtas o grasas con tendencia al brillo.",
   img: "../img/limpiadorFacial2.webp",
   precio: "$28.874",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "limpiador"
 },
 {
@@ -128,7 +128,7 @@ let productosCard = [{
   descripcion: "Gel de higiene facial para pieles mixtas a grasas. Formulado con agua termal, zinc seborregulador y tensioactivos suaves, limpia eficazmente sin resecar. No contiene parabenos ni alcohol.",
   img: "../img/limpiadorFacial4.webp",
   precio: "$37.608",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "limpiador"
 },
 {
@@ -136,7 +136,7 @@ let productosCard = [{
   descripcion: "Aceite limpiador de textura ligera que se transforma en emulsión al contacto con agua. Limpia en profundidad, elimina impurezas y deja la piel hidratada, suave y fresca al instante.",
   img: "../img/limpiadorFacial5.webp",
   precio: "$65.357",
-  piel: "mixta",
+  piel: "seca",
   categoria: "limpiador"
 },
 {
@@ -152,7 +152,7 @@ let productosCard = [{
   descripcion: "Limpieza suave ideal para pieles sensibles y delicadas. Puede usarse en adultos y niños. Refresca, calma e hidrata, cuidando incluso zonas íntimas o áreas irritadas de la piel.",
   img: "../img/limpiadorFacial7.webp",
   precio: "$27.450",
-  piel: "mixta",
+  piel: "seca",
   categoria: "limpiador"
 },
 {
@@ -160,7 +160,7 @@ let productosCard = [{
   descripcion: "Espuma facial que elimina impurezas, controla sebo y mantiene la hidratación. Contiene ácido hialurónico, niacinamida y ceramidas, dejando la piel limpia, equilibrada y con aspecto fresco y saludable.",
   img: "../img/limpiadorFacial8.webp",
   precio: "$28.872",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "limpiador"
 },
 {
@@ -168,7 +168,7 @@ let productosCard = [{
   descripcion: "Gel limpiador de triple acción: combate manchas, imperfecciones y exceso de brillo. Con ácidos glicólico y salicílico, limpia en profundidad y ayuda a mantener la piel libre de impurezas.",
   img: "../img/limpiadorFacial9.webp",
   precio: "$81.075",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "limpiador"
 },
 {
@@ -184,7 +184,7 @@ let productosCard = [{
   descripcion: "Leche limpiadora que elimina maquillaje e impurezas sin dejar grasitud. Permite que la piel respire y luzca saludable. Textura suave, fresca y apta para uso diario en todo tipo de piel.",
   img: "../img/limpiadorFacial11.webp",
   precio: "$9.526",
-  piel: "mixta",
+  piel: "seca",
   categoria: "limpiador"
 },
 {
@@ -192,7 +192,7 @@ let productosCard = [{
   descripcion: "Limpiador suave que hidrata y alivia sequedad o picazón en pieles sensibles o atópicas. Ayuda a fortalecer la barrera cutánea y mantiene la humedad natural de la piel de forma prolongada.",
   img: "../img/limpiadorFacial12.webp",
   precio: "$17.844",
-  piel: "mixta",
+  piel: "seca",
   categoria: "limpiador"
 },
 // ----------------- protectores solares -----------------
@@ -201,7 +201,7 @@ let productosCard = [{
   descripcion: "Protector solar para piel sensible y seca, con antioxidantes Licochalcona A y ácido glicirretínico. Neutraliza radicales libres, protege contra rayos UVA/UVB y favorece la reparación celular diaria.",
   img: "../img/protectorSolar1.webp",
   precio: "$31.362",
-  piel: "mixta",
+  piel: "seca",
   categoria: "protector"
 },
 {
@@ -209,10 +209,9 @@ let productosCard = [{
   descripcion: "Protector solar corporal de alta protección UVA/UVB en envase sustentable hecho con cartón reciclado. Textura ligera, hidratante y resistente al agua, ideal para pieles sensibles y exposición prolongada.",
   img: "../img/protectorSolar2.webp",
   precio: "$52.554",
-  piel: "mixta",
+  piel: "seca",
   categoria: "protector"
 },
-// Protectores solares (continuación)
 {
   nombre: "Protector Solar Facial Pigment Control Eucerin FPS 50+",
   descripcion: "Protector facial que previene el fotoenvejecimiento y reduce manchas con Thiamidol y Licochalcona A. Textura ligera, acabado mate y absorción rápida para uso diario.",
@@ -226,7 +225,7 @@ let productosCard = [{
   descripcion: "Leche hidratante con FPS50 resistente al agua que protege frente a rayos UV y aporta ácido hialurónico. Acabado seco y sensación ligera durante todo el día.",
   img: "../img/protectorSolar4.webp",
   precio: "$41.676",
-  piel: "mixta",
+  piel: "seca",
   categoria: "protector"
 },
 {
@@ -234,7 +233,7 @@ let productosCard = [{
   descripcion: "Gel-crema oil control con alta protección FPS50 y acabado mate. Controla el brillo y el sebo, es resistente al agua y apto para pieles sensibles con tendencia acneica.",
   img: "../img/protectorSolar5.webp",
   precio: "$33.020",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "protector"
 },
 {
@@ -250,7 +249,7 @@ let productosCard = [{
   descripcion: "Leche hidratante FPS30 para piel sensible en formato familiar. Hidrata y protege con acabado cómodo y resistente al agua, apto para uso diario de toda la familia.",
   img: "../img/protectorSolar7.webp",
   precio: "$43.621",
-  piel: "mixta",
+  piel: "seca",
   categoria: "protector"
 },
 {
@@ -258,7 +257,7 @@ let productosCard = [{
   descripcion: "Protector corporal en spray FPS30 de textura ultraligera y 100% transparente. Se absorbe rápido, refresca y protege, ideal para pieles sensibles o con tendencia acneica.",
   img: "../img/protectorSolar8.webp",
   precio: "$33.774",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "protector"
 },
 {
@@ -282,7 +281,7 @@ let productosCard = [{
   descripcion: "Protector facial para piel mixta a grasa con acabado ultra mate y control de brillo. Alta protección FPS50+ con sensación ligera, apto para uso diario.",
   img: "../img/protectorSolar11.webp",
   precio: "$29.802",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "protector"
 },
 {
@@ -294,13 +293,13 @@ let productosCard = [{
   categoria: "protector"
 },
 
-// Serums
+// ----------------- serums -----------------
 {
   nombre: "Sérum Anti Manchas Glycolic Bright L'Oréal París",
   descripcion: "Sérum anti-manchas con ácido glicólico que aclara y previene nuevas manchas. Mejora textura e ilumina la piel, aportando uniformidad y mayor claridad en pocas semanas.",
   img: "../img/serum1.webp",
   precio: "$39.000",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "serum"
 },
 {
@@ -316,7 +315,7 @@ let productosCard = [{
   descripcion: "Sérum con niacinamida que regula la producción de sebo y reduce inflamación. Mejora el equilibrio y la textura, aportando luminosidad sin sensación grasa.",
   img: "../img/serum3.webp",
   precio: "$18.869",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "serum"
 },
 {
@@ -332,7 +331,7 @@ let productosCard = [{
   descripcion: "Sérum con ácido salicílico, niacinamida y AHA para reducir imperfecciones y mejorar la textura. Fórmula ligera que calma y protege la piel con tendencia acneica.",
   img: "../img/serum5.webp",
   precio: "$30.900",
-  piel: "mixta",
+  piel: "grasa",
   categoria: "serum"
 },
 {
@@ -340,7 +339,7 @@ let productosCard = [{
   descripcion: "Sérum nocturno con retinol que ayuda a reducir arrugas y mejorar la textura en pocas semanas. Fórmula concentrada pensada para uso nocturno con tolerancia progresiva.",
   img: "../img/serum6.webp",
   precio: "$45.622",
-  piel: "mixta",
+  piel: "seca",
   categoria: "serum"
 },
 {
@@ -356,7 +355,7 @@ let productosCard = [{
   descripcion: "Sérum antiarrugas reafirmante con ácido hialurónico y extracto de acmella. Rellena líneas, mejora la firmeza y aporta un aspecto más terso y juvenil.",
   img: "../img/serum8.webp",
   precio: "$33.525",
-  piel: "mixta",
+  piel: "seca",
   categoria: "serum"
 },
 {
@@ -372,7 +371,7 @@ let productosCard = [{
   descripcion: "Sérum nocturno bifásico con retinaldehído que acelera la renovación celular. Reduce arrugas y líneas de expresión, mejorando textura y firmeza con uso continuado.",
   img: "../img/serum10.webp",
   precio: "$102.696",
-  piel: "mixta",
+  piel: "seca",
   categoria: "serum"
 },
 {
@@ -380,7 +379,7 @@ let productosCard = [{
   descripcion: "Sérum combinado de retinol e hialurónico que hidrata y corrige signos de envejecimiento. Textura ligera, apto para integración en rutinas nocturnas diarias.",
   img: "../img/serum11.webp",
   precio: "$ 9.894",
-  piel: "mixta",
+  piel: "seca",
   categoria: "serum"
 },
 {
@@ -388,11 +387,14 @@ let productosCard = [{
   descripcion: "Sérum antiedad con dos formas de retinol y vitamina B3 que trata arrugas profundas y unifica el tono, respetando pieles sensibles y ofreciendo buena tolerancia.",
   img: "../img/serum12.webp",
   precio: "$ 91.438",
-  piel: "mixta",
+  piel: "seca",
   categoria: "serum"
 }
 ]
-function mostrarProductos(categoria) {
+
+let categoriaActual = "";
+function mostrarProductos(categoria, piel) {
+  categoriaActual = categoria;
   let titulo = "DESCONOCIDO";
   if (categoria == "crema") {
     titulo = "Cremas";
@@ -410,7 +412,7 @@ function mostrarProductos(categoria) {
 
   productos.innerHTML = "";
   for (let prodCard of productosCard) {
-    if (prodCard.categoria == categoria) {
+    if (prodCard.categoria == categoria && (piel == "todas" || prodCard.piel == piel)) {
 
       let card = document.createElement("div");
       card.classList.add("card");
@@ -433,13 +435,15 @@ function mostrarProductos(categoria) {
 }
 
 
-function filtroPiel(tipo) {
+function filtroPiel(piel) {
   document.getElementById("btn_todas").classList.remove("activo");
   document.getElementById("btn_grasa").classList.remove("activo");
   document.getElementById("btn_seca").classList.remove("activo");
   document.getElementById("btn_mixta").classList.remove("activo");
-  
-  document.getElementById("btn_" + tipo).classList.add("activo");
+
+  document.getElementById("btn_" + piel).classList.add("activo");
+
+  mostrarProductos(categoriaActual, piel);
 }
 
 
