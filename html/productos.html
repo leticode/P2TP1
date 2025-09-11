@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="../img/logo1.ico">
+    <link rel="icon" href="../img/logo1.ico">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Limpiador Facial-Calma&Piel</title>
+    <title id="tituloHead">CATEGORIA PRODUCTO</title>
 </head>
 
 <body>
-    <header class="headerCrema header">
-            <div class="bloqueHeaderNav">
-                <h1>Limpiador facial</h1>
-                <input type="text" class="buscador" placeholder="Buscar producto...">
-                <nav class="navBloque">
-                    <a href="./index.html">Inicio</a>
-                    <a href="./crema.html">Cremas Hidratantes</a>
-                    <a href="./protectorSolar.html">Protector solar</a>
-                    <a href="./serum.html">Serum</a>
-                </nav>
-        
+    <header class="header">
+        <div class="bloqueHeaderNav">
+            <h1 id="tituloPagina">CATEGORIA PRODUCTO</h1>
+            <input type="text" class="buscador" placeholder="Buscar producto...">
+            <nav class="navBloque">
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html?categoria=crema">Crema</a>
+                <a href="./productos.html?categoria=limpiador">Limpiador facial</a>
+                <a href="./productos.html?categoria=protector">Protector solar</a>
+                <a href="./productos.html?categoria=serum">Serum</a>
+            </nav>
 
-            </div>
-        </header>
+
+        </div>
+    </header>
 
 
     <div class="contenedor">
@@ -40,7 +42,7 @@
         </div>
 
         <main class="productosCards" id="productos">
-            
+
         </main>
     </div>
 
@@ -73,11 +75,11 @@
         </div>
     </footer>
 
-    <script src="../js/main.js">
-    </script>
+    <script src="../js/main.js"></script>
     <script>
-        mostrarProductos("limpiador");
-
+        let params = new URLSearchParams(window.location.search);
+        let categoria = params.get("categoria");
+        mostrarProductos(categoria);
     </script>
 </body>
 

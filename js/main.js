@@ -392,11 +392,22 @@ let productosCard = [{
   categoria: "serum"
 }
 ]
-function mostrarProductos(categoria){
+function mostrarProductos(categoria) {
+  let titulo = "DESCONOCIDO";
+  if (categoria == "crema") {
+    titulo = "Cremas";
+  } else if (categoria == "limpiador") {
+    titulo = "Limpiadores";
+  } else if (categoria == "serum") {
+    titulo = "Serum";
+  } else if (categoria == "protector") {
+    titulo = "Protector Solar";
+  }
 
-    productos.innerHTML="";
-    for(let prodCard of productosCard){
-        if (prodCard.categoria==categoria) {
+  document.getElementById("tituloHead").textContent=titulo;
+  document.getElementById("tituloPagina").textContent=titulo;
+
+
 
             let card = document.createElement("div");
             card.classList.add("card");
