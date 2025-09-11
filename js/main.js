@@ -404,8 +404,8 @@ function mostrarProductos(categoria) {
     titulo = "Protector Solar";
   }
 
-  document.getElementById("tituloHead").textContent=titulo;
-  document.getElementById("tituloPagina").textContent=titulo;
+  document.getElementById("tituloHead").textContent = titulo;
+  document.getElementById("tituloPagina").textContent = titulo;
 
 
   productos.innerHTML = "";
@@ -433,7 +433,14 @@ function mostrarProductos(categoria) {
 }
 
 
-
+function filtroPiel(tipo) {
+  document.getElementById("btn_todas").classList.remove("activo");
+  document.getElementById("btn_grasa").classList.remove("activo");
+  document.getElementById("btn_seca").classList.remove("activo");
+  document.getElementById("btn_mixta").classList.remove("activo");
+  
+  document.getElementById("btn_" + tipo).classList.add("activo");
+}
 
 
 
