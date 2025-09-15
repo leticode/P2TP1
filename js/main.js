@@ -1,5 +1,3 @@
-let header = document.getElementsByClassName("header");
-let bloqueHeader = document.getElementsByClassName("bloqueHeader");
 let productos = document.getElementById("productos");
 
 let productosCard = [
@@ -118,15 +116,84 @@ let productosCard = [
   },
 ];
 
-for (let prodCard of productosCard) {
-  let card = document.createElement("div");
+const parsePrice = (s) => parseInt(String(s).replace(/[^\d]/g, ""), 10); // "$129.720" -> 129720
+const CHECKOUT_URL = "./comprar.html"; // ajustá el path a tu página del formulario
+
+for (let prod of productosCard) {
+  const card = document.createElement("div");
   card.classList.add("card");
+  const precioNum = parsePrice(prod.precio);
+
   card.innerHTML = `
-    <img src="${prodCard.img}" alt="${prodCard.nombre}">
-    <h2>${prodCard.nombre}</h2>
-    <p>${prodCard.descripcion}</p>
-    <h4>${prodCard.precio}</h4>
-    <button>Comprar</button>
-    `;
+    <img src="${prod.img}" alt="${prod.nombre}">
+    <h2>${prod.nombre}</h2>
+    <p>${prod.descripcion}</p>
+    <h4>${prod.precio}</h4>
+    <button class="btn-comprar" type="button">Comprar</button>
+  `;
+
+  const btn = card.querySelector(".btn-comprar");
+  btn.addEventListener("click", () => {
+    localStorage.setItem(
+      "checkoutItem",
+      JSON.stringify({
+        nombre: prod.nombre,
+        precio: precioNum, // número en ARS (sin símbolos)
+        precioFormateado: prod.precio,
+        img: prod.img,
+      })
+    );
+    window.location.href = CHECKOUT_URL;
+  });
+
   productos.appendChild(card);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navBloque = document.querySelector(".navBloque");
+  const body = document.body;
+
+  const mobileOverlay = document.createElement("div");
+  mobileOverlay.classList.add("mobile-overlay");
+  body.appendChild(mobileOverlay);
+
+  function toggleMobileMenu() {
+    hamburgerMenu.classList.toggle("active");
+    navBloque.classList.toggle("active");
+    mobileOverlay.classList.toggle("active");
+    body.classList.toggle("menu-open");
+  }
+
+  function closeMobileMenu() {
+    hamburgerMenu.classList.remove("active");
+    navBloque.classList.remove("active");
+    mobileOverlay.classList.remove("active");
+    body.classList.remove("menu-open");
+  }
+
+  if (hamburgerMenu) {
+    hamburgerMenu.addEventListener("click", toggleMobileMenu);
+  }
+
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+  }
+
+  const navLinks = navBloque.querySelectorAll("a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 768) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && navBloque.classList.contains("active")) {
+      closeMobileMenu();
+    }
+  });
+});
