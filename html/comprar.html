@@ -19,7 +19,6 @@
           type="text"
           requiredclass="buscador"
           placeholder="Buscar producto..."
-          class="buscador"
         />
         <nav class="navBloque">
           <a href="./index.html">Inicio</a>
@@ -45,24 +44,18 @@
               <input id="apellido" name="apellido" type="text" required />
 
               <label for="dni">DNI</label>
-              <input id="dni" name="dni" type="text" required />
+              <input id="dni" name="dni" type="text" />
 
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" />
+              <input id="email" name="email" type="email" required />
 
               <label for="telefono">Teléfono</label>
-              <input id="telefono" name="telefono" />
+              <input id="telefono" name="telefono" type="tel" required />
             </fieldset>
             <fieldset>
               <legend>Dirección de envío</legend>
               <label for="calle">Calle</label>
-              <input
-                id="calle"
-                name="calle"
-                type="text"
-                autocomplete="address-line1"
-                required
-              />
+              <input id="calle" name="calle" type="text" required />
 
               <label for="numero">Número</label>
               <input id="numero" name="numero" type="text" required />
@@ -114,22 +107,60 @@
               >
             </fieldset>
             <label for="notas">Notas del pedido</label>
+            <fieldset id="resumenFieldset">
+              <legend>Resumen del pedido</legend>
+
+              <div class="grid-resumen">
+                <div class="resumen-item">
+                  <label>Producto</label>
+                  <div id="resumenNombre">—</div>
+                </div>
+
+                <div class="resumen-item">
+                  <label>Precio unitario</label>
+                  <div id="resumenPrecio">$0</div>
+                </div>
+
+                <div class="resumen-item">
+                  <label for="cantidad">Cantidad</label>
+                  <input
+                    id="cantidad"
+                    name="cantidad"
+                    type="number"
+                    min="1"
+                    value="1"
+                  />
+                </div>
+
+                <div class="resumen-item">
+                  <label>Envío</label>
+                  <div id="resumenEnvio">$0</div>
+                </div>
+
+                <div class="resumen-item total">
+                  <label>Total</label>
+                  <div><strong id="resumenTotal">$0</strong></div>
+                </div>
+              </div>
+
+              <!-- Para que viajen en el envío -->
+              <input type="hidden" id="productoInput" name="producto" />
+              <input type="hidden" id="precioInput" name="precio_unitario" />
+              <input type="hidden" id="totalInput" name="total" />
+            </fieldset>
+
             <textarea
               id="notas"
               name="notas"
               rows="3"
               placeholder="Aclaraciones para el envío…"
             ></textarea>
-            <input
-              type="submit"
-              onclick="return enviarFormulario()"
-              value="enviar"
-            />
+            <input type="submit" value="enviar" />
           </form>
           <div id="error"></div>
         </div>
       </div>
     </div>
   </body>
-  <script src="/js/validacion.js"></script>
+  <script src="/js/validacion.js" defer></script>
 </html>
