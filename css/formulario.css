@@ -1,0 +1,245 @@
+/* ====== Variables y base ====== */
+:root {
+  --bg: #fafafa;
+  --text: #2a2a2a;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --line: #e5e7eb;
+  --brand: #40aeef;
+  --brand-600: #2f91cf;
+  --error: #dc2626;
+  --ok: #16a34a;
+  --radius: 12px;
+  --space: 14px;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  --header-h: 150px; /* si tu header es fijo */
+  --font: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ====== Header ====== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+
+.headerCrema .bloqueHeaderNav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 170px 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.navBloque a {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.navBloque a:hover {
+  border-color: var(--line);
+  background: #f7fafc;
+}
+
+/* buscador */
+.buscador {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+/* ====== Layout general ====== */
+body {
+  padding-top: 0; /* ya usamos header sticky */
+}
+
+h1 {
+  max-width: 1100px;
+  margin: 18px auto;
+  padding: 0 16px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.FinalizarCompra {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 16px 32px;
+}
+
+#checkoutForm {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+/* ====== Fieldsets ====== */
+fieldset {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 18px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* ====== Campos ====== */
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Radios y checkbox en línea */
+input[type="radio"],
+input[type="checkbox"] {
+  transform: translateY(2px);
+  margin-right: 8px;
+}
+
+/* Estados de foco y validación simples */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(64, 174, 239, 0.15);
+}
+
+input:required:invalid {
+  border-color: #f59e0b;
+} /* advertencia */
+input:valid {
+  border-color: #cbd5e1;
+} /* neutro/ok light */
+
+/* ====== Resumen del pedido ====== */
+#resumenFieldset {
+  background: #f9fafb;
+}
+
+.grid-resumen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.resumen-item {
+  padding: 10px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.resumen-item.total {
+  grid-column: 1 / -1;
+  background: #f3f9ff;
+  border-color: #cae7fb;
+}
+
+.resumen-item label {
+  margin: 0 0 6px;
+  color: var(--muted);
+}
+
+/* ====== Botón Enviar ====== */
+input[type="submit"] {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 12px 16px;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+input[type="submit"]:hover {
+  background: var(--brand-600);
+}
+
+/* ====== Mensaje de error ====== */
+#error {
+  margin-top: 12px;
+  color: var(--error);
+  font-size: 14px;
+}
+
+/* ====== Utilidades responsivas ====== */
+@media (max-width: 900px) {
+  .headerCrema .bloqueHeaderNav {
+    grid-template-columns: 140px 1fr;
+  }
+  .navBloque {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 24px;
+  }
+  .grid-resumen {
+    grid-template-columns: 1fr;
+  }
+  fieldset {
+    padding: 12px;
+  }
+  #checkoutForm {
+    padding: 16px;
+  }
+}
