@@ -1,89 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logo1.ico">
-    <link rel="stylesheet" href="../css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo1.ico" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title id="tituloHead">CATEGORIA PRODUCTO</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="bloqueHeaderNav">
-            <h1 id="tituloPagina">CATEGORIA PRODUCTO</h1>
-            <input type="text" class="buscador" placeholder="Buscar producto...">
-            <nav class="navBloque">
-                <a href="./index.html">Inicio</a>
-                <a href="./productos.html?categoria=crema">Crema</a>
-                <a href="./productos.html?categoria=limpiador">Limpiador facial</a>
-                <a href="./productos.html?categoria=protector">Protector solar</a>
-                <a href="./productos.html?categoria=serum">Serum</a>
-            </nav>
-
-
-        </div>
+      <div class="bloqueHeaderNav">
+        <h1 id="tituloPagina">CATEGORIA PRODUCTO</h1>
+        <input type="text" class="buscador" placeholder="Buscar producto..." />
+        <nav class="navBloque">
+          <a href="./index.html">Inicio</a>
+          <a href="./productos.html?categoria=crema">Crema</a>
+          <a href="./productos.html?categoria=limpiador">Limpiador facial</a>
+          <a href="./productos.html?categoria=protector">Protector solar</a>
+          <a href="./productos.html?categoria=serum">Serum</a>
+        </nav>
+      </div>
     </header>
 
-
     <div class="contenedor">
-        <div class="alignCard">
-            <aside class="filtro">
-                <h3>Filtrar por tipo de piel</h3>
-                <div class="filtroBotones">
-                    <button id="btn_todas" class="activo" onclick="filtroPiel('todas')">Todas</button>
-                    <button id="btn_grasa" onclick="filtroPiel('grasa')">Grasa</button>
-                    <button id="btn_seca" onclick="filtroPiel('seca')">Seca</button>
-                    <button id="btn_mixta" onclick="filtroPiel('mixta')">Mixta</button>
-                </div>
-            </aside>
+      <div class="alignCard">
+        <aside class="filtro">
+          <h3>Filtrar por tipo de piel</h3>
+          <div class="filtroBotones">
+            <button class="btn-piel activo" value="todas">Todas</button>
+            <button class="btn-piel" value="grasa">Grasa</button>
+            <button class="btn-piel" value="seca">Seca</button>
+            <button class="btn-piel" value="mixta">Mixta</button>
+          </div>
+        </aside>
+      </div>
 
-        </div>
-
-        <main class="productosCards" id="productos">
-
-        </main>
+      <main class="productosCards" id="productos"></main>
     </div>
 
     <footer class="footer">
-        <div class="footer-contenido">
-            <div class="footer-logo">
-                <h2>Calma&Piel</h2>
-                <p>Tu cuidado diario en un solo lugar</p>
-            </div>
-
-            <nav class="footer-nav">
-                <h3>Categorías</h3>
-                <ul>
-                    <li><a href="./productos.html?categoria=crema">Cremas</a></li>
-                    <li><a href="./productos.html?categoria=limpiador">Limpiador facial</a></li>
-                    <li><a href="./productos.html?categoria=protector">Protector solar</a></li>
-                    <li><a href="./productos.html?categoria=serum">Serum</a></li>
-                </ul>
-            </nav>
-
-            <div class="footer-contacto">
-                <h3>Contacto</h3>
-                <p>Email: contacto@calmaypiel.com</p>
-                <p>Tel: +54 9 341 123 4567</p>
-            </div>
+      <div class="footer-contenido">
+        <div class="footer-logo">
+          <h2>Calma&Piel</h2>
+          <p>Tu cuidado diario en un solo lugar</p>
         </div>
 
-        <div class="footer-copy">
-            <p>&copy; 2025 Calma&Piel. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="./productos.html?categoria=crema">Cremas</a></li>
+            <li>
+              <a href="./productos.html?categoria=limpiador"
+                >Limpiador facial</a
+              >
+            </li>
+            <li>
+              <a href="./productos.html?categoria=protector">Protector solar</a>
+            </li>
+            <li><a href="./productos.html?categoria=serum">Serum</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Email: contacto@calmaypiel.com</p>
+          <p>Tel: +54 9 341 123 4567</p>
         </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2025 Calma&Piel. Todos los derechos reservados.</p>
+      </div>
     </footer>
 
     <script src="../js/main.js"></script>
-    <script> 
-        // 1. leo lo que está a partir del "?" en el URL de la pagina. Esto es "window.location.search"
-        // 2. uso  URLSearchParams para transformar ese texto que está despues del "?" en distintos parametros. Porque en este caso solo tenemos "categoria" pero podria haber mas
-        // 3. a la variable "categoria" le asigno el valor del parametro "categoria". Esto es el let categoria = params.get("categoria"); 
-        let params = new URLSearchParams(window.location.search);
-        let categoria = params.get("categoria");
-        mostrarProductos(categoria, "todas");
+    <script>
+      //   // 1. leo lo que está a partir del "?" en el URL de la pagina. Esto es "window.location.search"
+      //   // 2. uso  URLSearchParams para transformar ese texto que está despues del "?" en distintos parametros. Porque en este caso solo tenemos "categoria" pero podria haber mas
+      //   // 3. a la variable "categoria" le asigno el valor del parametro "categoria". Esto es el let categoria = params.get("categoria");
+      //   let params = new URLSearchParams(window.location.search);
+      //   let categoria = params.get("categoria" || "crema");
+      //   mostrarProductos(categoria, "todas");
     </script>
-</body>
-
+  </body>
 </html>
