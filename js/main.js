@@ -459,7 +459,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function mostrarProductos(categoria, piel = "todas") {
+  function mostrarProductos(categoria, piel = "todas", filtrar = "") {
     categoriaActual = categoria;
 
     let titulo = "DESCONOCIDO";
@@ -479,7 +479,8 @@ document.addEventListener("DOMContentLoaded", () => {
     productosCard.forEach((prodCard, idx) => {
       if (
         prodCard.categoria === categoria &&
-        (piel === "todas" || prodCard.piel === piel)
+        (piel === "todas" || prodCard.piel === piel) &&
+        prodCard.nombre.toLowerCase().includes(filtrar.toLowerCase())
       ) {
         const card = document.createElement("div");
         card.classList.add("card");
@@ -542,5 +543,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const { categoria, piel } = getParamsFromURL();
     setActivePiel(piel);
     mostrarProductos(categoria, piel);
+    let buscador = document.getElementById("buscador");
+    buscador.addEventListener("input", () => {
+      mostrarProductos(categoria, piel, buscador.value);
+    })
   })();
 });
+
