@@ -12,7 +12,7 @@
     <header class="header">
       <div class="bloqueHeaderNav">
         <h1 id="tituloPagina">CATEGORIA PRODUCTO</h1>
-        <input type="text" class="buscador" placeholder="Buscar producto..." />
+        <input type="text" class="buscador" id="buscador" placeholder="Buscar producto..." />
         <nav class="navBloque">
           <a href="./index.html">Inicio</a>
           <a href="./productos.html?categoria=crema">Crema</a>
@@ -48,17 +48,11 @@
 
         <nav class="footer-nav">
           <h3>Categorías</h3>
-          <ul>
-            <li><a href="./productos.html?categoria=crema">Cremas</a></li>
-            <li>
-              <a href="./productos.html?categoria=limpiador"
-                >Limpiador facial</a
-              >
-            </li>
-            <li>
-              <a href="./productos.html?categoria=protector">Protector solar</a>
-            </li>
-            <li><a href="./productos.html?categoria=serum">Serum</a></li>
+          <ul id="listaProducto">
+            <li data-categoria="cremas"><a href="./productos.html?categoria=crema">Cremas</a></li>
+            <li data-categoria="limpiador"><a href="./productos.html?categoria=limpiador">Limpiador facial</a></li>
+            <li data-categoria="protector"><a href="./productos.html?categoria=protector">Protector solar</a></li>
+            <li data-categoria="serum"><a href="./productos.html?categoria=serum">Serum</a></li>
           </ul>
         </nav>
 
