@@ -261,6 +261,64 @@ button:hover {
   font-size: 0.9rem;
 }
 
+.reseñas-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.reseña-card {
+  background-color: var(--colorCard);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reseña-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.reseña-card h2 {
+  font-size: 1rem;
+  color: var(--colorTitulos);
+  margin: 0;
+  font-family: var(--fuenteLetra);
+}
+
+.reseña-card p {
+  font-size: 0.85rem;
+  color: var(--colorAcentuado);
+  margin: 0.25rem 0;
+  font-family: var(--fuenteLetra);
+}
+
+.reseña-card p strong {
+  color: var(--colorTitulos);
+}
+  .reseña-card h2 {
+    font-size: 0.9rem;
+  }
+
+  .reseña-card p {
+    font-size: 0.75rem;
+  }
+
+
+
 
 /*CSS INICIO*/
 
@@ -340,6 +398,9 @@ button:hover {
   .productosCards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .reseñas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
 }
 
 /* ----------------- Tablet (>=768px y <992px) ----------------- */
@@ -383,6 +444,9 @@ button:hover {
   .navBloque a::before,
   .navBloque a::after {
     content: ""; 
+  }
+    .reseñas-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -439,6 +503,12 @@ button:hover {
   .navBloque a::after {
     content: "";
   }
+  .reseñas-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+}
 }
 
 
